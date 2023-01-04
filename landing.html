@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> {% block title %} {% endblock %} - Blockchain Voting</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <!-- our project just needs Font Awesome Solid + Brands -->
+    <script src="https://kit.fontawesome.com/d37b8c8de6.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="header">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="{{ url_for('landing') }}">VoteChain</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="{{ url_for('home') }}">Home<span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('vote') }}">Vote</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('results') }}">Results</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('profile') }}">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('register') }}">Register</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container-fluid">
+      <div class="content">
+                <!--Banner section-->
+        <section id="Banner">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <p class="promo-title">WELCOME TO VOTECHAIN</p>
+                <p id="promo-text">VoteChain an end-to-end verifiable e-voting scheme. That ensures high security,
+                  Verifiability and immense resilience against faults.<br>The system has fundamental 
+                  benefits over paper-based systems such as increased efficiency,lower 
+                  costs and reduced errors.
+                </p>
+              </div>
+              <div class="col-md-6 text-center">
+                <img src="static/images/vote2.jpeg" class="logo_img img-fluid" >
+              </div>
+            </div>
+
+          </div>
+
+        </section>
+
+        <!--Services section-->
+
+        <section id="services">
+          <div class="container text-center">
+            <h3 class="title1">Services</h3>
+            <div class="row text-center">
+              <div class="col-md-4 services">
+                <img src="static/images/secure3.jpg" class="service-img" alt="">
+                <h4>Seamless Voting</h4>
+                <p>VoteChain an end-to-end verifiable e-voting scheme. That ensures high security,
+                  Verifiability and immense resilience against faults.</p>
+              </div>
+              <div class="col-md-4 services">
+                <img src="static/images/secure1.jpeg" class="service-img" alt="">
+                <h4>Secure</h4>
+                <p>VoteChain an end-to-end verifiable e-voting scheme. That ensures high security,
+                  Verifiability and immense resilience against faults.</p>
+              </div>
+              <div class="col-md-4 services">
+                <img src="static/images/secure3.jpg" class="service-img" alt="">
+                <h4>Auditable Vote</h4>
+                <p>VoteChain an end-to-end verifiable e-voting scheme. That ensures high security,
+                  Verifiability and immense resilience against faults.</p>
+              </div>
+            </div>
+            <br>
+            <button type="button" id="myButton" class="btn btn-primary">All Services</button>
+          </div>
+        </section>
+        <!--About Us-->
+
+        <section id="about-us">
+          <div class="container">
+            <h2 class="title text-center">Why VoteChain?</h2>
+            <div class="row">
+              <div class="col-md-6 about-us">
+                <p class="about-title">
+                  Inspiration for?
+                </p>
+                <p>This project drew inspiration from the recently concluded general
+                  elections in kenya. The process was murred with a number of problems
+                  from irregularities,Lack of trust from all players, poor transmission
+                  of results and a very expensive election. This here is a low fidelity
+                  solution that attempts to solve this problems.
+                </p>
+                <ul>
+                  <li>VoteChain platform system</li>
+                  <li>Ensuring optimal security</li>
+                  <li>Immutable so vote is secure</li>
+                  <li>Can be audited to confirm integrity</li>
+                  <li>Fast and cost effective</li>
+                  <li>Honesty and integrity at the core</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <img src="static/images/audit1.webp" class="about-img img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--socials section-->
+        <section id="contact">
+          <div class="container text-center">
+            <p>PROJECT BY</p>
+            <div class="row">
+              <div class="col-md-6">
+                <p>Elisha Mbadi</p>
+                <div class="social-icons">
+                  <a href="#" class="fa-brands fa-twitter fa-2xl fa-shake"></a>
+                  <a href="https://github.com/elishambadi" class="fa-brands fa-github fa-2xl fa-shake"></a>
+                  <a href="https://www.linkedin.com/in/elisha-mbadi-4b1693165" class="fa-brands fa-linkedin fa-2xl fa-shake"></a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <p>Victor Juma</p>
+                <div class="social-icons">
+                  <a href="#" class="fa-brands fa-twitter fa-2xl fa-shake"></a>
+                  <a href="https://github.com/JumaOchi" class="fa-brands fa-github fa-2xl fa-shake"></a>
+                  <a href="https://www.linkedin.com/in/victor-juma-837034185" class="fa-brands fa-linkedin fa-2xl fa-shake"></a>
+                </div>
+              </div>
+              <a href="https://github.com/elishambadi/VoteChain23">project repo</a>
+            </div>
+          </div>
+
+        </section>
+
+      </div>
+    </div>
+    <div class="container text-center">
+      copyright ibc.ke
+    </div>
+    <script src="static/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+  </body>
+</html>
